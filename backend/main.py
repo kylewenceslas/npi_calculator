@@ -3,7 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import Union, List
 
 import csv
+import os
 import sqlite3
+
 con = sqlite3.connect("npi.db")
 
 
@@ -27,7 +29,10 @@ app.add_middleware(
 )
 
 
-def save_in_db(operation:str, result:str) -> None:
+def save_in_db(operation: str, result: str) -> None:
+    TESTING_MODE = os.getenv("TESTING_MODE", "").lower() in ["true", "1"]
+    if TESTING_MODE:
+        return
     cur = con.cursor()
     cur.execute(f"INSERT INTO calculations VALUES ('{operation}', '{result}')")
     con.commit()

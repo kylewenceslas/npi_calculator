@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      {Array.from({length: 10}, (_,i) => (<br key={i}/>))}
+      {Array.from({length: 6}, (_,i) => (<br key={i}/>))}
       Stack: &nbsp; {stack.join(" ")} 
         <br/>
       Number: &nbsp;

@@ -6,3 +6,9 @@
 ,Invalid expression
 3,3
 545 36 - 3 +,512
+3,3
+10 5 3 - -,8
+3 10 5 + -,-12
+50 50 -,0
+4 6,Invalid expression
+4 6 +,10
