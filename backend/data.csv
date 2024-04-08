@@ -1,0 +1,8 @@
+3,3
+3 +,Not enough operands for operation
+3 + -5,Not enough operands for operation
+3 -5 -,Invalid item (check if you have negative integers)
+3 5,Invalid expression
+,Invalid expression
+3,3
+545 36 - 3 +,512
