@@ -27,7 +27,7 @@ This will also save the result in a SQLite database `npi.db` inside the backend 
 
 [<img src="images/db.PNG" width="350"/>](db.png)
 
-You can clik on the "Save data to CSSV" button to save the previous results stored in the database as a csv file ("*data.csv*") inside the project backend folder.
+You can clik on the "Save data to CSV" button to save the previous results stored in the database as a csv file ("*data.csv*") inside the project backend folder.
 
 # Launch the project
 
@@ -36,7 +36,7 @@ You can clik on the "Save data to CSSV" button to save the previous results stor
 The below image shows a *docker-compose.yml* file containing the services used to launch the project. We just need a python fastapi server (here is *uvicorn*) and a reactjs starter (here launched with *react-scripts* via *yarn* commands). We decided to use a SQLite database to facilitate the handling of data without needing a powerful server. 
 The backend and frontend folders contains the Dockerfile for each of those services.
 
-[<img src="images/project_folder.PNG" width="350"/>](project_folder.png)
+[<img src="images/project_folder.PNG" width="450"/>](project_folder.png)
 
 To launch the project using `docker compose` command, you first need to have docker (or docker desktop for windows) installed in your computer. Then, open a terminal and move to the project folder (''*npi_calculator*''). After that, just enter the following command:
 ```
@@ -63,7 +63,7 @@ pytest
 ```
 Here is an image showing our current results.
 
-[<img src="images/python_tests.PNG" width="350"/>](python_tests.png)
+[<img src="images/python_tests.PNG" />](python_tests.png)
 
 # TODO (Next steps)
 
